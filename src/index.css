@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  /* Single shared gradient (orange -> pink -> violet) */
+  --brand-gradient: linear-gradient(90deg, #ff6b2b 0%, #ec3879 52%, #8b3dff 100%);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.brand-gradient-bg {
+  background-image: var(--brand-gradient);
+}
+
+.brand-gradient-text {
+  background-image: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
